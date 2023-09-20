@@ -1,9 +1,11 @@
 import './App.css';
 import React, { Component } from 'react';
 import Logo from './components/Logo/Logo';
+import Rank from './components/Rank/Rank';
 import Navigation from './components/Navigation/Navigation';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import ParticlesBg from 'particles-bg'
 
 class App extends Component {
   constructor() {
@@ -12,11 +14,13 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      <Navigation />
-      <Logo />
-      <ImageLinkForm />
-      <FaceRecognition />
-    </div>
+        <ParticlesBg type="cobweb" bg={true} color="#c7edd1" className="particles-bg"/>
+        <Navigation />
+        <Logo />
+        <Rank />
+        <ImageLinkForm />
+        <FaceRecognition />
+      </div>
     )
   }
 }
